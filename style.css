@@ -1,5 +1,75 @@
-h1{
-    color:red;
-    font-family: 'Raleway';
+/*--Largeur de la page destop--*/
+#bloc_page{
+    max-width: 1400px;
+    
+    margin: auto;
 }
 
+
+/*--Header--*/
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+
+/*--Div logo booki--*/
+#logo_booki{
+    width: 61.09px;
+    height: 19px;
+    margin-top: 44px;
+    margin-left: 55px;
+    border: 2px solid orange;
+
+
+}
+
+/*--Nav Header--*/
+#nav_header{
+    display: flex;
+    width: 500px;
+    text-decoration: none;
+    border: 2px solid green;
+    list-style-type: none;
+    
+
+    
+ }
+
+
+#activites{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 48px;
+    margin-right: 77px;
+                      
+}
+
+#hebergement{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0065FC;
+    text-decoration: none;
+    margin-top: 48px;
+    margin-right: 67px;
+    margin-left: auto;
+      
+}
+
+@media screen and (max-width: 768px){
+    header{
+    flex-direction: column;
+    background: #FFFFFF;
+       
+
+        
+    }
+}
