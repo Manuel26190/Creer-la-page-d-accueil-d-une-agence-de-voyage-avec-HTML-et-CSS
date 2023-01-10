@@ -19,55 +19,62 @@ header{
     width: 61.09px;
     height: 19px;
     margin-top: 44px;
-    margin-left: 55px;    
+    margin-left: 55px;  
+    border: 1px solid black;  
 }
 
 /*--Nav Header--*/
+#nav_header{
+    border: 1px dotted red;
+}
+
 
 #ul_nav{
     
     display: flex;
-    list-style-type: none;
-    margin-top: -1px;
-    border: 1px solid blueviolet;     
-     }
-li:hover{
-    border: 1px solid red;
-    border-top: 2px solid #0065fc;
-    justify-content: center;
+    border: 2px solid rgb(11, 212, 226);
+    margin-top: 48px; 
+    
+         
+}    
+
+/*--Liste de la barre de navigation--*/
+a{
+    text-decoration: none;
 }
 
-
-#hebergements{
-    display: block;
+#li_heb{
+    width:162px;
+    justify-content: center;
+    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #0065FC;
-    text-decoration: none;
-    padding: 48px 67px 0 0;   
-    
+    background-color: yellow;
+    margin-right: 42px;
     
 }
 
+#li_heb:hover{
+    border-top: 2px solid #0065fc;
+    
+}
 
-#activites{
-    display: block;
+#li_act{
+    width:auto;
+    justify-content: center;
+    display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    text-decoration: none;
-    padding: 48px 77px 0 0;
+    background-color: rgb(243, 145, 17);
+    margin-right: 77px;
     
-    
-                            
 }
-
-
-
 
 
 /*--Responsive Tablette--*/
