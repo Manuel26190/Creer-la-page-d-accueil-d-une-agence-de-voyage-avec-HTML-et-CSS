@@ -11,7 +11,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    border: 1px solid rgb(54, 133, 30);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 /*--Div logo booki--*/
@@ -20,23 +20,25 @@ header{
     height: 19px;
     margin-top: 44px;
     margin-left: 55px;  
-    border: 1px solid black;  
+    border: 1px solid rgb(248, 248, 248);  
 }
 
 /*--Nav Header--*/
 #nav_header{
-    border: 1px dotted red;
+    border: 1px dotted rgb(255, 255, 255);
+    height: 70px;
 }
-
 
 #ul_nav{
     
     display: flex;
-    border: 2px solid rgb(11, 212, 226);
-    margin-top: 48px; 
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 0px; 
+    height: 70px ;
     
          
 }    
+
 
 /*--Liste de la barre de navigation--*/
 a{
@@ -47,34 +49,85 @@ a{
     width:162px;
     justify-content: center;
     display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-right: -7px;
+        
+}
+
+#li_heb:hover{
+    border-top: 2px solid #0065fc;    
+}
+
+#hebergements{
+    margin-top: 48px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #0065FC;
-    background-color: yellow;
-    margin-right: 42px;
-    
-}
-
-#li_heb:hover{
-    border-top: 2px solid #0065fc;
-    
 }
 
 #li_act{
-    width:auto;
+    width:162px;
     justify-content: center;
     display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-right: 27px;
+}
+
+#li_act:hover{
+    border-top: 2px solid #0065fc;
+}
+
+#activites{
+    margin-top: 48px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    background-color: rgb(243, 145, 17);
-    margin-right: 77px;
+}
+
+/*--Article avec H1, barre de recherche, liens et informations--*/
+
+/*--Section 1, H1 et texte--*/
+#section_1{
+    border: 1px solid green;
+}
+
+/*--Section 2, logo position et bouton de recherche--*/
+#section_2{
+    display: flex;
+    border: 1px solid red;
+}
+
+/*--Section 3, Filtres et liens--*/
+#section_3{
+    display: flex;
+}
+
+/*--Nav Section 3--*/
+#filtres{
+    background-color: yellow;
+}
+#nav_section_3{
+    border: 1px solid rgb(4, 255, 242);
     
 }
+#ul_filtres{
+    display: flex;
+    list-style-type: none;
+
+}
+
+#section_4{
+    display: flex;
+}
+
+
+
+
+
 
 
 /*--Responsive Tablette--*/
@@ -102,6 +155,12 @@ a{
         width: 100%;
         margin-left: auto;
         margin-right: auto; 
+    }
+
+    #ul_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     
