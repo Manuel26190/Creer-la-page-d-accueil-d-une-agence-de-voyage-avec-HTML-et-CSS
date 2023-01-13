@@ -94,34 +94,149 @@ a{
 #section_1{
     border: 1px solid green;
 }
+h1{
+    margin-left: 55px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bolder;
+}
+
+#texte_h1{
+    margin-left: 55px;
+    font-weight: bold;
+}
 
 /*--Section 2, logo position et bouton de recherche--*/
 #section_2{
     display: flex;
-    border: 1px solid red;
+    border: 1px solid red;       
 }
+#logo_position{
+    margin-left: 73px;
+    height: 18px;
+    width: 14px;
+    color: #000000;
+    
+}
+#search_frame{
+    margin-left: 35px;
+    width: 147px;
+    height: 21px;
+}
+
+#search_button{
+    margin-left: 72px;
+    height: 21px;
+    width: 100px;
+
+}
+
+
+
 
 /*--Section 3, Filtres et liens--*/
 #section_3{
     display: flex;
+    align-items: center;
 }
 
 /*--Nav Section 3--*/
 #filtres{
-    background-color: yellow;
+width: 54px;
+height: 21px;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #000000;
+font-weight: bolder;
+background-color: aqua;
+margin-left: 63px;
+
+
+
+
 }
+
+.lien_filtres{
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
+
 #nav_section_3{
-    border: 1px solid rgb(4, 255, 242);
+    border: 1px solid rgb(4, 255, 242);     
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
     
 }
 #ul_filtres{
     display: flex;
+    
     list-style-type: none;
+    justify-content: space-around;
+    border: 1px solid yellow;
+    
+}
+
+.li_filtres{
+    height: 40px;
+    width: auto ;
+    padding: 0 12px 0 12px;
+
+    color: #0065fc;
+    border-radius: 20px;
+    border: 1px solid grey;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: -40px;
+    
+}
+
+.li_filtres:hover{
+    background-color: #D9D9D9 ;
+}
+
+/*--Section 4 logo et texte--*/
+#section_4{
+    border: 1px dotted red;
+    height: 20px;
+    display: flex;
+    
+    
+}
+
+#logo_info{
+        
+    color: #0065fc;
+    border: 1px solid green;
+    height: 24px;
+    
+    margin-left: 69px ;
 
 }
 
-#section_4{
-    display: flex;
+#texte_p_1{
+    border: 1px solid orangered;
+    width: 412px;
+    height: 19px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    margin-top: 0;
+    font-weight: bold;
+    margin-left: 21px;
+    
+
 }
 
 
@@ -141,8 +256,7 @@ a{
 /*--Responsive Mobile--*/
 @media screen and (max-width: 768px){
     header{
-    flex-direction: column;
-    background: #FFFFFF;         
+    flex-direction: column;           
     }
 
     #logo_booki{
@@ -162,8 +276,54 @@ a{
         flex-direction: row;
         justify-content: space-around;
     }
+    #section_1{
+        
+    }
+    #section_2{
+                
+    }
+
+
+    #section_3{
+        flex-direction: column;
+    }
+
+    #nav_section{
+        
+
+    }
+    #filtres{
+        display: block;
+    }
+    #ul_filtres{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        align-content: space-around;
+        flex-direction: column;
+        margin: 0 auto 0 auto;
+           
+        
+    }
 
     
+
+    #section_4{
+        display: flex;
+        justify-content: flex-start;   
+        height: auto;       
+    }
+
+    #logo_info{
+        justify-content: center;
+        margin: 0 auto 0 auto;
+    }
+     #texte_p_1{
+        flex-wrap: wrap;
+    }
+
+
+
 
    
 }
