@@ -96,10 +96,11 @@ a{
 }
 h1{
     margin-left: 55px;
-    font-weight: 700;
+    font-weight:700;
     font-size: 22px;
     line-height: 26px;
-    font-weight: bolder;
+    font-style: normal;
+    
 }
 
 #texte_h1{
@@ -110,27 +111,65 @@ h1{
 /*--Section 2, logo position et bouton de recherche--*/
 #section_2{
     display: flex;
-    border: 1px solid red;       
+    align-items: center;
+    border-radius:15px;
+    border: 2px dotted red;
+    height: 49px;
+    width: 500px;
+
+           
 }
 #logo_position{
     margin-left: 73px;
     height: 18px;
     width: 14px;
     color: #000000;
+    border: 1px dotted green ;
+
     
 }
 #search_frame{
-    margin-left: 35px;
-    width: 147px;
-    height: 21px;
-}
+    margin-left: 45px;
+    width: 180px;
+    height: 49px;
+    border: none;
+    outline-style: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+
+    }
 
 #search_button{
-    margin-left: 72px;
-    height: 21px;
-    width: 100px;
-
+    margin-left: 30px;
+    height: 49px;
+    width: 132px;
+    background-color: #0065fc;
+    color: #FFFFFF;
+    border:none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 }
+::placeholder{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+#search_logo{
+    display: none;
+}
+
 
 /*--Section 3, Filtres et liens--*/
 #section_3{
@@ -276,14 +315,39 @@ margin-left: 63px;
         flex-direction: row;
         justify-content: space-around;
     }
+/*--Section 1 --*/
     #section_1{
         
     }
+/*--Section 2 --*/
     #section_2{
-                
+        width: auto; 
+        display: flex;
+        justify-content: center;           
+    }
+    #logo_position{
+        width: auto;
+        margin-left: 0;
+    }
+    #search_frame{
+        width: auto;
+        margin: auto;
+    }
+    ::placeholder{
+        width: auto;
+    }
+    #search_button{
+        width: 49px;
+    }
+    #search_text{
+        display: none;
+    }
+    #search_logo{
+        display:inline;
+        width: auto;
     }
 
-
+/*--Section 3 --*/
     #section_3{
         flex-direction: column;
     }
@@ -300,7 +364,6 @@ margin-left: 63px;
     #filtres{
         margin-left: 0;
         padding-left: 0;
-        background-color: brown;
         display: flex;
         align-self: flex-start;
         
