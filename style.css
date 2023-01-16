@@ -132,13 +132,12 @@ h1{
 
 }
 
-
-
-
 /*--Section 3, Filtres et liens--*/
 #section_3{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 /*--Nav Section 3--*/
@@ -171,34 +170,34 @@ margin-left: 63px;
 
 #nav_section_3{
     border: 1px solid rgb(4, 255, 242);     
-    width: 100%;
     display: flex;
     flex-direction: column;
+    width: auto;
     
-
-    
+       
 }
 #ul_filtres{
     display: flex;
-    
     list-style-type: none;
-    justify-content: space-around;
-    border: 1px solid yellow;
+    justify-content: flex-start;
+    border: 1px solid rgb(238, 255, 0);
+    padding-left:25px ;
+    
     
 }
 
 .li_filtres{
     height: 40px;
-    width: auto ;
+    width: auto;
     padding: 0 12px 0 12px;
-
+    font-size: 17px;
     color: #0065fc;
     border-radius: 20px;
     border: 1px solid grey;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     display: flex;
-    margin-left: -40px;
+    margin: 5px 35px 5px 5px;
     
 }
 
@@ -234,16 +233,10 @@ margin-left: 63px;
     font-weight: 400;
     margin-top: 0;
     font-weight: bold;
-    margin-left: 21px;
+    margin-left: 11px;
     
 
 }
-
-
-
-
-
-
 
 /*--Responsive Tablette--*/
 @media screen and (min-width: 769px) and (max-width: 992px ) {
@@ -255,6 +248,13 @@ margin-left: 63px;
 
 /*--Responsive Mobile--*/
 @media screen and (max-width: 768px){
+
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0 21px 0 20px;
+        
+    }
     header{
     flex-direction: column;           
     }
@@ -290,20 +290,51 @@ margin-left: 63px;
 
     #nav_section{
         
+        width: 100%;
+        display: flex;
+        justify-self: flex-start;
+        margin-right: 0;
+        
 
     }
     #filtres{
-        display: block;
+        margin-left: 0;
+        padding-left: 0;
+        background-color: brown;
+        display: flex;
+        align-self: flex-start;
+        
+        
+        
+
     }
     #ul_filtres{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        align-content: space-around;
-        flex-direction: column;
-        margin: 0 auto 0 auto;
-           
         
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        
+       
+       
+                   
+    }
+    .li_filtres{
+       width: 155px ;
+       height: 50px;
+       border-radius: 40px;
+       margin-left: 0;
+       margin-right: auto;       
+    }
+
+    .lien_filtres{
+        
+    }
+
+    p{
+        font-size: 80%;
     }
 
     
