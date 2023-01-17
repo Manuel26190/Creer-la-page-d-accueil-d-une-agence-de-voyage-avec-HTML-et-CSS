@@ -283,23 +283,38 @@ margin-left: 63px;
 #article_2{
     background-color: #f2f2f2;
     border-radius: 20px;
-
+    border: 1px solid rgb(52, 177, 3);
+    width: 1340px;
+    height: 626px;
+    margin-left: 50px;
+    display: flex;
+}
+#section_5{
+    border:2px dotted rgb(46, 44, 204);
+    width: 880px;
+    height: 626px;
+    
+    
 }
 h2{
     padding-top: 42px;
-    margin-left: 90px;
+    margin-left: 40px;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    color: #000000;
+    color: #000000;    
+}
+#section_6{
+    display: grid;
+    
     
 }
 .card{
-    margin-top: 23px;
-    margin-left: 90px;
+    
     width: 246px;
     height: 199px;
+    border: 2px solid greenyellow;
     
 
     }
@@ -325,6 +340,12 @@ h2{
     background-color: orange;
 }
 
+/*--Aside Les plus populaires--*/
+aside{
+    border: 2px solid black;
+    width: 420px;
+    height: 625px;
+}
 
 
 /*--Responsive Tablette--*/
