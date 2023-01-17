@@ -306,7 +306,10 @@ h2{
     color: #000000;    
 }
 #section_6{
-    display: grid;
+    display: flex;
+    border: 1px solid black ;
+    height: 626px;
+    flex-wrap: wrap;
     
     
 }
@@ -314,7 +317,8 @@ h2{
     
     width: 246px;
     height: 199px;
-    border: 2px solid greenyellow;
+    border: 2px solid rgb(225, 0, 255);
+    margin-left: 31px;
     
 
     }
@@ -325,11 +329,7 @@ h2{
     border-radius: 20px 20px 0px 0px;
         
     }
-.container{   
-    border: 2px dotted red;
-     
-    
-}
+
 
 .stars_logo{
     margin-top:9px ;
@@ -337,8 +337,7 @@ h2{
 }
 .prix{
     margin-top: 9px;
-    background-color: orange;
-}
+    }
 
 /*--Aside Les plus populaires--*/
 aside{
