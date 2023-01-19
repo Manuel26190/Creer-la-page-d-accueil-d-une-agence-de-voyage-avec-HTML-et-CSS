@@ -34,9 +34,7 @@ header{
     display: flex;
     border: 2px solid rgb(255, 255, 255);
     margin-top: 0px; 
-    height: 70px ;
-    
-         
+    height: 70px ;    
 }    
 
 
@@ -88,7 +86,7 @@ a{
     color: #000000;
 }
 
-/*--Article avec H1, barre de recherche, liens et informations--*/
+/*--Article 1 avec H1, barre de recherche, liens et informations--*/
 
 /*--Section 1, H1 et texte--*/
 #section_1{
@@ -105,7 +103,7 @@ h1{
 
 #text_h1{
     margin-left: 55px;
-    font-weight: bold;
+   
 }
 
 /*--Section 2, logo position et bouton de recherche--*/
@@ -247,11 +245,7 @@ margin-left: 63px;
 /*--Section 4 logo et texte--*/
 #section_4{
     border: 1px dotted rgb(0, 0, 0);
-    display: flex;
-    
-    
-    
-    
+    display: flex;      
 }
 
 #logo_info{
@@ -386,9 +380,7 @@ aside{
         justify-content: space-around;
     }
 /*--Section 1 --*/
-    #section_1{
-                
-    }
+    
     h1{
         margin:31px 12% auto 12%;
     }
@@ -461,21 +453,14 @@ aside{
        margin-right: auto;
        margin-bottom: 0;       
     }
-
-    .lien_filtres{
-        
-    }
-
+    
     p{
         font-size: 80%;
     }
 
-    
-
     #section_4{
         display: flex;
         justify-content: flex-start;
-
 
     }
 
@@ -485,11 +470,8 @@ aside{
     }
      #texte_p_1{
         margin:43px 9% auto 3% ;
-        
-        border: 1px solid green;
-        
-        
-        
+        border: 1px solid green;    
+         
         
                 
     }
