@@ -2,128 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet 2</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Projet_2</title>
     <script src="https://kit.fontawesome.com/385dd43a94.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-
-
-<!--Header-->
-    <header>
-        <div id="div_header">
+<body>      
+    <header><!--Header, comprenant logo Booki et les liens en Nav -->
+            <div id="div_header">
             <a><img id="logo_booki" src="images/logo_Booki.png" alt="logo_Booki"></a>
-        </div>
-
-    <!--Barre de navigation du header-->
-            
-        <nav id="nav_header">
-            <ul id="ul_nav">
-                <li id="li_heb"><a id="hebergements" href="#"><strong>Hébergements</strong></a></span></li>
-                <li id="li_act"><a id="activites" href="#"><strong>Activités</strong></a></li>
-            </ul>                           
-        </nav>            
-    </header>
-
-<!--Article 1 comprenant H1, barre de recherche et filtres -->
-    <article>
-    <!--Section 1, H1 et texte-->
-        <section id="section_1">
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p id="text_h1">En plein centre-ville ou en pleine nature</p>
-        </section>
-    <!--Section 2, logo position et boutton de recherche-->
-        <section id="section_2">                   
-        <!--Logo position géographique-->
-            <div id="logo_position"><i class="fa-solid fa-location-dot"></i></div>
-        <!-- barre de recherche--> 
-            <form action="" method="post">
-                <input id="search_frame" type="search" placeholder="Marseille, France">
-                <button id="search_button"><span id="search_text">Rechercher</span><span id="search_logo"><i class="fa-solid fa-magnifying-glass"></i></span></button>
-            </form>                       
-        </section>
-    <!--Section 3, Filtres et liens-->
-        <section id="section_3">
-            <p id="filtres">Filtres</p>
-            <nav id="nav_section_3">
-                <ul id="ul_filtres">
-                    <li class="li_filtres"><i class="fa-solid fa-money-bill-wave"></i><a class="lien_filtres" href="#"><p>Économique</p></a></li>
-                    <li class="li_filtres"><i class="fa-solid fa-person"></i><a class="lien_filtres" href="#"><p>Familial</p></a></li>
-                    <li class="li_filtres"><i class="fa-solid fa-heart"></i><a class="lien_filtres" href="#"><p>Romantique</p></a></li>
-                    <li class="li_filtres"><i class="fa-solid fa-dog"></i><a class="lien_filtres" href="#"><p>Animaux autorisés</p></a></li>
-                </ul>
-            </nav>                    
-        </section>
-    <!--Section 4 logo info et texte-->    
-        <section id="section_4">
-            <div id="logo_info"><i class="fa-solid fa-circle-info"></i></div>
-                <p id="texte_p_1">Plus de 500 logements sont disponibles dans cette ville</p>
-        </section>
-    </article>
-
-
-    <!--Article 2, comprenant H2 Les hébergements et H3 Les plus populaires sous forme de cards-->
-    <article id="article_2">
-        <section id="section_5">
-            <h2>Hébergements à Marseille</h2>
-<!--Section comprenant les 6 cards Hébergements-->
-        <section id="section_6">
-            <div class="card">
-                <img class="img_heberg" src="images/Auberge _La_Canebière.jpg" alt="Auberge_de_La_Canebière">
-                <div class="container">
-                    <h4><b>Auberge La Canebière</b></h4>
-                    <p class="prix">Nuit à partir de 25€</p>
-                    <div class="stars_logo"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            </div>           
+            <nav id="nav_header"><!--Barre de navigation du header-->
+                <ul id="ul_nav">
+                    <li id="li_heb"><a id="hebergements" href="#"><strong>Hébergements</strong></a></span></li>
+                    <li id="li_act"><a id="activites" href="#"><strong>Activités</strong></a></li>
+                </ul>                           
+            </nav>    
+    </header>     
+    <main><!--Main comprenant Article 1, Article 2 et Article 3-->
+        <article id="article_1"><!--Article 1, comprenant H1, barre de recherche et filtres -->            
+            <section id="section_1"><!--Section 1, H1 et texte-->
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p id="text_h1">En plein centre-ville ou en pleine nature</p>
+            </section>            
+            <section id="section_2"><!--Section 2, logo position et boutton de recherche-->                   
+                <!--Logo position géographique-->
+                <div id="logo_position"><i class="fa-solid fa-location-dot"></i></div>
+                <!-- barre de recherche--> 
+                <form id="form" action="" method="post">
+                    <input id="search_frame" type="search" placeholder="Marseille, France">
+                    <button id="search_button"><span id="search_text">Rechercher</span><span id="search_logo"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                </form>                       
+            </section>            
+            <section id="section_3"><!--Section 3, Filtres et liens-->
+                <p id="filtres">Filtres</p>
+                <nav id="nav_section_3">
+                    <ul id="ul_filtres">
+                        <li class="li_filtres"><i class="fa-solid fa-money-bill-wave"></i><a class="lien_filtres" href="#"><p>Économique</p></a></li>
+                        <li class="li_filtres"><i class="fa-solid fa-person"></i><a class="lien_filtres" href="#"><p>Familial</p></a></li>
+                        <li class="li_filtres"><i class="fa-solid fa-heart"></i><a class="lien_filtres" href="#"><p>Romantique</p></a></li>
+                        <li class="li_filtres"><i class="fa-solid fa-dog"></i><a class="lien_filtres" href="#"><p>Animaux autorisés</p></a></li>
+                    </ul>
+                </nav>                    
+            </section>            
+        </article>
+        <article id="article_2"><!--Article 2, comprenant section 4, 5,6 et l'Aside-->
+            <section id="section_4"><!--Section 4 logo info et texte 500 logements-->
+                <div id="logo_info"><i class="fa-solid fa-circle-info"></i></div>
+                <p id="texte_p_1">Plus de 500 logements sont disponibles dans cette ville</p>        
+            </section>
+            <section id="section_flex"><!--Section flex, comprenant section 6 et Aside-->
+            <section id="section_5"><!--Section 5, comprenant H2 Les hébergements, les 6 cards et Afficher plus-->
+                <h2>Hébergements à Marseille</h2>     
+                <section id="section_6"><!--Section 6, comprenant les 6 cards Hébergements-->
+                    <div class="card"><a href="#"><img class="img_heberg" src="images/Auberge _La_Canebière.jpg" alt="Auberge_de_La_Canebière">            
+                        <h3><b>Auberge La Canebière</b></h3>
+                        <p class="prix">Nuit à partir de 25<strong>€</strong></p>
+                        <p class="stars_logo">★★★★✰</p></a>
+                    </div>
+                    <div class="card"><a href="#"><img class="img_heberg" src="images/Hôtel_du_port.jpg" alt="Hôtel_du_port">            
+                        <h3><b>Hôtel du port</b></h3>
+                        <p class="prix">Nuit à partir de 52<strong>€</strong></p>
+                        <p class="stars_logo">★★★★✰</p></a>
+                    </div>
+                    <div class="card"><a href="#"><img class="img_heberg" src="images/Hôtel_Les_mouettes.jpg" alt="Hôtel_Les_mouettes">            
+                        <h3><b>Hôtel Les mouettes</b></h3>
+                        <p class="prix">Nuit à partir de 76<strong>€</strong></p>
+                        <p class="stars_logo">★★★★✰</p></a>
+                    </div>            
+                    <div class="card"><a href="#"><img class="img_heberg" src="images/Hôtel_de_la_mer.jpg" alt="Hôtel_de_la_mer">            
+                        <h3><b>Hôtel de la mer</b></h3>
+                        <p class="prix">Nuit à partir de 46<strong>€</strong></p>
+                        <p class="stars_logo">★★★★✰</p></a>
+                    </div>
+                    <div class="card"><a href="#"><img class="img_heberg" src="images/Auberge_Le_Panier.jpg" alt="Auberge_Le_Panier">            
+                        <h3><b>Auberge Le Panier</b></h3>
+                        <p class="prix">Nuit à partir de 23<strong>€</strong></p>
+                        <p class="stars_logo">★★★★✰</p></a>
+                    </div>
+                    <div class="card"><a href="#"><img class="img_heberg" src="images/Hôtel_Chez_Amina.jpg" alt="Hôtel_Chez_Amina">            
+                        <h3><b>Hôtel Chez Amina</b></h3>
+                        <p class="prix">Nuit à partir de 96<strong>€</strong></p>
+                        <p class="stars_logo">★★★★✰</p></a>
+                    </div>
+                    <div><a id="afficher_plus" href="#">Afficher plus</a></div>
+                </section>
+                </section>            
+            <aside><!--Aside, comprenant H2 Les plus Populaires, logo et les 3 cards -->
+                <h2 id="h2_pop">Les Plus Populaires<i id="logo_chart" class="fa-solid fa-chart-line"></i></h2>
+                <section id="section_7"><!--Section 7, les 3 cards-->
+                    <div class="card_aside"><span class=><a href="#"><img class="img_pop" src="images/Hôtel_Le_Soleil_du_matin.jpg" alt="Hôtel_le_soleil_du_matin"></span>            
+                    <h4><b>Hôtel Le soleil du</br> matin</b></h4>
+                        <p class="prix_pop">Nuit à partir de 128<strong>€</strong></p>
+                        <p class="stars_pop">★★★★✰</p></a>
+                    </div>
+                    <div class="card_aside"><span><a href="#"><img class="img_pop" src="images/Chambres_d'hôtes_au_coeur_de_l'eau.jpg" alt="Chambres d'hôtes Au coeur de l'eau"></span>            
+                        <h4><b>Chambres d'hôtes Au</br>coeur de l'eau</b></h4>
+                        <p class="prix_pop">Nuit à partir de 71<strong>€</strong></p>
+                        <p class="stars_pop">★★★★✰</p></a>
+                    </div>        
+                    <div class="card_aside"><span><a href="#"><img class="img_pop" src="images/Hôtel_Bleu_et_Blanc.jpg" alt=""></span>            
+                        <h4><b>Hôtel Bleu et Blanc</b></h4>
+                        <p class="prix_pop">Nuit à partir de 68<strong>€</strong></p>
+                        <p id="stars_BB">★★★★✰</p></a>
+                    </div>      
+                </section>
+            </aside>
+        </section><!--Fin de section flex-->
+        </article>        
+        <article id="article_3"><!--Article 3, H5 Activités à Marseille et photos-->
+            <h5>Activités à Marseille</h5>
+            <section id="section_8"><!--Section 8 les 4 cards Activités à Marseille-->
+                <div class="card_activity"><a href="#"><img class="img_act" src="images/Vieux-Port.jpg" alt="Image_du_Vieux_Port">            
+                    <p class="p_act">Vieux-Port</p></a>
                 </div>
-            </div>
-            <div class="card">
-                <img class="img_heberg" src="images/Auberge _La_Canebière.jpg" alt="Auberge_de_La_Canebière">
-                <div class="container">
-                    <h4><b>Auberge La Canebière</b></h4>
-                        <p class="prix">Nuit à partir de 25€</p>
-                        <div class="stars_logo"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <div class="card_activity"><a href="#"><img class="img_act" src="images/Fort de Pomègue.jpg" alt="Image_du_Fort_de_Pomègue">            
+                    <p class="p_act">Fort de Pomègues</p></a>
                 </div>
-            </div>
-            <div class="card">
-                <img class="img_heberg" src="images/Auberge _La_Canebière.jpg" alt="Auberge_de_La_Canebière">
-                <div class="container">
-                    <h4><b>Auberge La Canebière</b></h4>
-                    <p class="prix">Nuit à partir de 25€</p>
-                    <div class="stars_logo"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <div class="card_activity"><a href="#"><img class="img_act" src="images/Parc national des Calanques.jpg" alt="Image_du_Parc_national_des_Calanques">            
+                    <p class="p_act">Parc national des Calanques</p></a>
                 </div>
-            </div>
+                <div class="card_activity"><a href="#"><img class="img_act" src="images/Notre-Dame-de-la-Garde.jpg" alt="Image_de_Notre_Dame_de_la_Garde">            
+                    <p class="p_act">Notre-Dame-de-la-Garde</p></a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer><!--Footer comprenant h6 et infos-->
+        <section class="foot_section"><!--Section 9-->
+            <h6>A propos</h6>
+            <p class="p_footer">Fonctionement du site</p>
+            <p class="p_footer">Conditions générales</p>
+            <p class="p_footer">Données et confidentialité</p>
         </section>
-                    <p>Afficher plus</p>
-                    
+        <section class="foot_section">
+            <h6>Nos hébergements</h6>
+            <p class="p_footer">Charte qualité</p>
+            <p class="p_footer">Proposer votre hôtel</p>            
         </section>
-<!--Aside Les plus populaires H3 et les 3 cards-->
-    <aside>
-        <h3>Les Plus populaires</h3>
-        <div class="card">
-            <img class="img_heberg" src="images/Auberge _La_Canebière.jpg" alt="Auberge_de_La_Canebière">
-            <div class="container">
-                <h4><b>Auberge La Canebière</b></h4>
-                <p class="prix">Nuit à partir de 25€</p>
-                <div class="stars_logo"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-            </div>
-        </div>
-
-    </aside>            
-</article> 
-
-
-
-                
-                  
-
-
-        
-        
-
-
-
+        <section class="foot_section">
+            <h6>Assistance</h6>
+            <p class="p_footer">Centre d'aide</p>
+            <p class="p_footer">Nous contacter</p>
+        </section>
+    </footer>
+   
 </body>
 </html>

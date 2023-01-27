@@ -1,19 +1,18 @@
-/*--Largeur de la page destop--*/
 body{
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 3rem;
+    padding: 3em ; 
+    margin: 0;
     font-family: 'Raleway';
-}
+    }
 
 
 /*--Header--*/
-header{
+header{    
     display: flex;
     justify-content: space-between;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid black;  
+        
 }
-
 /*--Div logo booki--*/
 #logo_booki{
     width: 61.09px;
@@ -23,21 +22,12 @@ header{
     border: 1px solid rgb(248, 248, 248);  
 }
 
-/*--Nav Header--*/
-#nav_header{
-    border: 1px dotted rgb(255, 255, 255);
-    height: 70px;
-}
-
-#ul_nav{
-    
+#ul_nav{    
     display: flex;
     border: 2px solid rgb(255, 255, 255);
     margin-top: 0px; 
-    height: 70px ;    
-}    
-
-
+        
+}
 /*--Liste de la barre de navigation--*/
 a{
     text-decoration: none;
@@ -85,49 +75,55 @@ a{
     line-height: 19px;
     color: #000000;
 }
+/*--Main--*/
 
-/*--Article 1 avec H1, barre de recherche, liens et informations--*/
 
-/*--Section 1, H1 et texte--*/
-#section_1{
-    border: 1px solid green;
+/*--Article 1 comprenant H1, barre de recherche et filtres--*/
+#article_1{   
+        
+    border: 2px dotted green;     
 }
+/*--Section 1, H1 et texte--*/
 h1{
     margin-left: 55px;
     font-weight:700;
     font-size: 22px;
     line-height: 26px;
+    font-style: normal;    
+}
+#text_h1{    
     font-style: normal;
-    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 55px;    
 }
-
-#text_h1{
-    margin-left: 55px;
-   
-}
-
 /*--Section 2, logo position et bouton de recherche--*/
 #section_2{
     display: flex;
-    align-items: center;
     border-radius:15px;
-    border: 2px dotted red;
-    height: 49px;
-    width: 500px;
-
-           
-}
-#logo_position{
-    margin-left: 73px;
-    height: 18px;
-    width: 14px;
-    color: #000000;
-    border: 1px dotted green ;
-
     
+             
 }
+#logo_position{    
+    margin-left: 50px;
+    font-size: 22px;
+    color: #000000;    
+    width: 50px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;       
+}
+#form{
+    margin-top: -7px;    
+}
+
 #search_frame{
-    margin-left: 45px;
+    margin-left: 10px;
     width: 180px;
     height: 49px;
     border: none;
@@ -138,20 +134,19 @@ h1{
     line-height: 21px;
     text-align: center;
     color: #000000;
-
-    }
+}
 
 #search_button{
-    margin-left: 30px;
+    margin-left: 35px;    
     height: 49px;
     width: 132px;
     background-color: #0065fc;
     color: #FFFFFF;
     border:none;
     border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;font-family: 'Raleway';
+    border-bottom-right-radius: 15px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -167,100 +162,91 @@ h1{
 #search_logo{
     display: none;
 }
-
-
 /*--Section 3, Filtres et liens--*/
 #section_3{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-
+    
 }
-
 /*--Nav Section 3--*/
 #filtres{
-width: 54px;
-height: 21px;
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-color: #000000;
-font-weight: bolder;
-background-color: aqua;
-margin-left: 63px;
-
-
-
-
-}
-
-.lien_filtres{
-    margin-left: 10px;
+    width: 54px;
+    height: 21px;
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
     color: #000000;
-}
-
-#nav_section_3{
-    border: 1px solid rgb(4, 255, 242);     
-    display: flex;
-    flex-direction: column;
-    width: auto;
+    font-weight: bolder;
+    margin-left: 63px;
+    }
     
-       
-}
-#ul_filtres{
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    border: 1px solid rgb(238, 255, 0);
-    padding-left:25px ;
+    .lien_filtres{
+        margin-left: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+    }
     
-    
-}
-
-.li_filtres{
-    height: 40px;
-    width: auto;
-    padding: 0 12px 0 12px;
-    font-size: 17px;
-    color: #0065fc;
-    border-radius: 20px;
-    border: 1px solid grey;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-    margin: 5px 35px 5px 5px;
-    
-}
-
-.li_filtres:hover{
-    background-color: #D9D9D9 ;
-}
-
-/*--Section 4 logo et texte--*/
-#section_4{
-    border: 1px dotted rgb(0, 0, 0);
-    display: flex;      
-}
-
-#logo_info{
+    #nav_section_3{       
+        display: flex;
+        flex-direction: column;
         
-    color: #0065fc;
-    border: 2px solid green;
-    height: 24px;
-    margin-top: 40px;
-    margin-left: 69px ;
+        
+           
+    }
+    #ul_filtres{
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-start;
+        padding-left:25px ;
+        
+        
+    }
+    
+    .li_filtres{
+        height: 40px;
+        width: auto;
+        padding: 0 12px 0 12px;
+        font-size: 17px;
+        color: #0065fc;
+        border-radius: 20px;
+        border: 1px solid grey;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        margin: 5px 35px 5px 5px;
+        
+    }
+    
+    .li_filtres:hover{
+        background-color: #D9D9D9 ;
+    }
 
+/*--Article 2--*/
+
+#article_2{
+       
+    padding: 0 50px 0 50px;
+    border: 3px dotted red;
+    }
+/*--Section 4 logo info et texte 500 logements--*/
+#section_4{
+    height: 96px;
+    display: flex;  
+}
+#logo_info{        
+    color: #0065fc;
+    height: 24px;
+    margin-top: 70px;
+    margin-left: 9px ;
 }
 
 #texte_p_1{
-    border: 1px dotted orangered;
-    width: 412px;
+    width: 444px;
     height: 19px;
     font-size: 16px;
     color: #000000;
@@ -268,30 +254,21 @@ margin-left: 63px;
     margin-top: 0;
     font-weight: bold;
     margin-left: 11px;
-    margin-top: 40px;
-    
-
+    margin-top: 70px;     
 }
 
-/*--Article 2--*/
-#article_2{
+/*--Section 5, H2 hébergements à Marseille--*/
+#section_5{
+    
     background-color: #f2f2f2;
     border-radius: 20px;
-    border: 1px solid rgb(52, 177, 3);
-    width: 1340px;
-    height: 626px;
-    margin-left: 50px;
     display: flex;
-}
-#section_5{
-    border:2px dotted rgb(46, 44, 204);
-    width: 880px;
-    height: 626px;
-    
-    
+    flex-direction: column;
+                  
 }
 h2{
-    padding-top: 42px;
+    padding-top: 40px;
+    margin-top: 0px;
     margin-left: 40px;
     font-style: normal;
     font-weight: 700;
@@ -299,96 +276,274 @@ h2{
     line-height: 26px;
     color: #000000;    
 }
+/*--Section 6, comprenant les 6 cards Hébergements--*/ 
 #section_6{
     display: flex;
-    border: 1px solid black ;
-    height: 626px;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
+    border: 1px solid black;        
     
 }
-.card{
-    
+.card{    
     width: 246px;
     height: 199px;
-    border: 2px solid rgb(225, 0, 255);
-    margin-left: 31px;
-    
-
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+     margin-left: 33px;  
+    background-color: #FFFFFF;
+    box-shadow: 0 0 1em gray;       
     }
 .img_heberg{
-    width: 246px;
-    height: 124px;
+    width: 96%;
+    height: 114px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
-        
+    object-fit:cover ;        
     }
-
-
-.stars_logo{
-    margin-top:9px ;
-    background-color: pink;
+h3{    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-left: 16px;
+    margin-top: 0px;    
 }
 .prix{
-    margin-top: 9px;
-    }
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 16px;
+    margin-top: -12px;
+}
+.stars_logo{
+    color: #0065fc;
+    font-size: 20px ;    
+    margin-left: 15px;
+    margin-top: -17px;
+}
+/*--Texte Afficher plus--*/
+#afficher_plus{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-left: 43px;
+}
 
-/*--Aside Les plus populaires--*/
-aside{
-    border: 2px solid black;
-    width: 420px;
-    height: 625px;
+/*--Aside, comprenant H2 Les plus Populaires, logo et les 3 cards--*/
+aside{  
+     
+    background: #F2F2F2;
+    border-radius: 20px;
+           
+    }    
+  #h2_pop{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    padding-top: 40px; 
+    
+  }
+  #logo_chart{
+    margin-left:118px ;
+    width: 18px;
+    height: 15.5px;
+    color:#0065fc;    
+  }
+  /*--Section 7, les 3 cards--*/
+  #section_7{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 26px;
+    border: 2px dotted green;     
+   }
+  .card_aside{
+    width: 343px;
+    height: 144px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 1em gray;
+    border-radius: 20px;
+    display: flex;    
+    margin-bottom: 33px;
+               
+  }
+.img_pop{
+    width: 132px;
+    height: 134px;
+    border: 5px solid #FFFFFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit:cover ;
+    
+  }
+h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 17px;
+    margin-left: 15px;
+    
+    }
+.prix_pop{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: -18px;    
+    margin-left: 15px;
+    }
+.stars_pop{
+    color: #0065fc;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 31px;
+    }
+#stars_BB{
+    color: #0065fc;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 15px;    
 }
 
 
-/*--Responsive Tablette--*/
-@media screen and (min-width: 769px) and (max-width: 992px ) {
-    header{
-        background-color: #FFFFFF;
-    }
+
+/*--Article 3, H6 Activités à Marseille et photos--*/
+#article_3{    
+         
+       
+}
+h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-left: 50px;
+    color: #000000;
+    margin-top: 60px;
     
 }
 
-/*--Responsive Mobile--*/
-@media screen and (max-width: 768px){
+/*--Section 8 les 4 cards Activités à Marseille--*/ 
+#section_8{
+    display: flex;     
+    border: 2px dotted yellowgreen;
+    margin-left: 50px ;
+    
+}
+.card_activity{
+    width: 302px;
+    height: 444px;
+    margin-right: 43px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 1em gray;
+    border-radius: 20px;   
+}
+.img_act{
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.p_act{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 19px;
+}
 
-    body{
-        width: 100%;
-        margin: 0;
-        padding: 0 21px 0 20px;
-        
+/*--Footer, comprenant h6 et infos--*/
+footer{
+    margin:69px 50px 0 48px ;
+    padding-left: 70px;   
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-evenly;       
+
+}
+.foot_section{    
+    width: 33%;     
+     
+}
+
+h6{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+.p_footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 12px;
+}
+
+
+/*--Responsive mobile--*/
+@media screen and (max-width:767px) {
+    body{        
+        padding: 0; 
+        margin: 0;                
     }
+    /*--Header, comprenant logo Booki et les liens en Nav--*/ 
     header{
-    flex-direction: column;           
-    }
 
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+                        
+    }
     #logo_booki{
         display: block;
         margin-left: auto;
         margin-right: auto;               
     }
-
     #nav_header{
-        width: 100%;
+        
         margin-left: auto;
         margin-right: auto; 
     }
-
     #ul_nav{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding: 0;
+        
+    }    
+    /*--Main--*/    
+            
+    /*--Article 1 comprenant H1, barre de recherche et filtres--*/
+    #article_1{
+        width: auto;
+        height: auto;        
     }
-/*--Section 1 --*/
-    
+    /*--Section 1, H1 et texte --*/
     h1{
         margin:31px 12% auto 12%;
     }
     #text_h1{
-        margin:13px 12% auto 12%;
-        
-    }
-/*--Section 2 --*/
+        margin:13px 12% auto 12%;     
+    } 
+    /*--Section 2, Section 2, logo position et boutton de recherche --*/
     #section_2{
         width: auto; 
         display: flex;
@@ -421,14 +576,11 @@ aside{
     #section_3{
         flex-direction: column;
     }
-
-    #nav_section_3{
-        
+    #nav_section_3{        
         width: 100%;
         display: flex;
         justify-self: flex-start;
-        height: 130px;    
-
+        height: 130px;  
     }
     #filtres{
         margin-left: 0;
@@ -436,8 +588,7 @@ aside{
         display: flex;
         align-self: flex-start;
     }
-    #ul_filtres{
-        
+    #ul_filtres{        
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -453,31 +604,59 @@ aside{
        margin-right: auto;
        margin-bottom: 0;       
     }
-    
-    p{
-        font-size: 80%;
+    /*--Section 4--*/
+        #logo_info{         
+        margin: 43px 1% auto 2%;                
     }
+    #texte_p_1{
+        margin:43px 25% auto 1%;     
+    }    
 
-    #section_4{
-        display: flex;
-        justify-content: flex-start;
 
-    }
-
-    #logo_info{         
-        margin: 40px auto 30px 11px;
-                
-    }
-     #texte_p_1{
-        margin:43px 9% auto 3% ;
-        border: 1px solid green;    
-         
+    /*--Article 2, comprenant section 4, 5,6 et l'Aside--*/
+    #article_2{
+        margin: 0;
+        padding: 0;
         
-                
+        ;        
     }
+    /*--Section 5, comprenant H2 Les hébergements, les 6 cards et Afficher plus--*/
+    #section_5{
+        margin: 0;
+    }
+    /*--Section 6,comprenant les 6 cards Hébergements--*/
+    #afficher_plus{
+        display: none;
+    } 
+
+    
+    /*--Article 3, H5 Activités à Marseille et photos--*/
+    
+    #section_8{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    /*--Footer--*/    
+    }
+    footer{        
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0 0 0;
+        padding-left: 30px;
+        width:160%;       
+        
+        
+
+    }
+    
+
+                          
+    }
+    
+        
 
 
-
-
-   
-}
