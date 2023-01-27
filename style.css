@@ -75,8 +75,6 @@ a{
     line-height: 19px;
     color: #000000;
 }
-/*--Main--*/
-
 
 /*--Article 1 comprenant H1, barre de recherche et filtres--*/
 #article_1{   
@@ -257,13 +255,20 @@ h1{
     margin-top: 70px;     
 }
 
-/*--Section 5, H2 hébergements à Marseille--*/
-#section_5{
+#section_flex{
+    display: flex;
+    column-gap: 40px;
     
-    background-color: #f2f2f2;
-    border-radius: 20px;
+    
+}
+/*--Section 5,comprenant H2 Les hébergements et H3 Les plus populaires sous forme de card--*/
+#section_5{
     display: flex;
     flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 0 18px 0 18px;
+        
                   
 }
 h2{
@@ -279,17 +284,17 @@ h2{
 /*--Section 6, comprenant les 6 cards Hébergements--*/ 
 #section_6{
     display: flex;
-    flex-wrap: wrap;   
-    border: 1px solid black;        
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    border: 1px solid black;
+          
     
 }
 .card{    
     width: 246px;
     height: 199px;
     border-radius: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-     margin-left: 33px;  
+    margin-top: 10px;  
     background-color: #FFFFFF;
     box-shadow: 0 0 1em gray;       
     }
@@ -331,7 +336,10 @@ h3{
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    margin-left: 43px;
+    
+}
+#div_afficher_plus{
+    margin: 40px 0 0 40px;
 }
 
 /*--Aside, comprenant H2 Les plus Populaires, logo et les 3 cards--*/
@@ -339,6 +347,7 @@ aside{
      
     background: #F2F2F2;
     border-radius: 20px;
+    border: 1px solid green;
            
     }    
   #h2_pop{
@@ -371,7 +380,9 @@ aside{
     box-shadow: 0 0 1em gray;
     border-radius: 20px;
     display: flex;    
-    margin-bottom: 33px;
+    margin: 0 30px 33px 30px;
+
+    
                
   }
 .img_pop{
@@ -623,6 +634,12 @@ h6{
     /*--Section 5, comprenant H2 Les hébergements, les 6 cards et Afficher plus--*/
     #section_5{
         margin: 0;
+            }
+
+    #section_flex{
+        flex-direction: column-reverse ;
+
+
     }
     /*--Section 6,comprenant les 6 cards Hébergements--*/
     #afficher_plus{
