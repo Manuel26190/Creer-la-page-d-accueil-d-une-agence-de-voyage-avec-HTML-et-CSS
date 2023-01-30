@@ -233,7 +233,6 @@ h1{
     font-size: 16px;
     color: #000000;
     font-weight: 400;    
-    font-weight: bold;
     margin-left: 11px;
     margin-top: 50px;         
 }
@@ -357,9 +356,7 @@ aside{
     box-shadow: 0 0 1em gray;
     border-radius: 20px;
     display: flex;    
-    margin: 0 30px 33px 30px;
-
-    
+    margin: 0 30px 33px 30px;   
                
   }
 .img_pop{
@@ -379,6 +376,7 @@ h4{
     color: #000000;
     margin-top: 17px;
     margin-left: 15px;
+    width:169px ;
     
     }
 .prix_pop{

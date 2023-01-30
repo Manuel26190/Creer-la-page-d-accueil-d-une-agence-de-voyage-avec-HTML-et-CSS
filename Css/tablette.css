@@ -1,0 +1,75 @@
+/*--Responsive tablette--*/
+@media screen and (max-width:992px){
+body{
+    margin: 0;
+    padding: 1em;
+}
+
+#hebergements{
+    color: black;
+}
+.li_filtres{
+    margin: auto 20px auto auto;
+}
+#section_flex{
+    flex-direction: column;
+}
+#section_5{
+    height: 626px;
+}
+#section_6{
+    row-gap: 20px;
+    column-gap: 20px;    
+}
+
+.card{
+    width: 29%;
+    }
+.img_heberg{
+    width: 95%;
+}
+
+/*--Aside--*/
+aside{
+    margin-top:53px ;
+    height:278px;
+}
+#section_7{
+    flex-direction: row;
+    
+}
+.card_aside{
+    width: 29%;
+    height: 134px;
+    margin: 0 0 5px 25px;
+    
+}
+.img_pop{
+    width: 82px;
+    height: 124px;
+}
+h4{
+    font-size: 14px;
+    margin-left: 7px;
+    width:111px ;    
+}
+.prix_pop{
+   font-size: 13px;
+   margin-left: 7px;
+   
+}
+.stars_pop{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 7px;
+    
+    
+    
+}
+#stars_BB{
+ 
+ margin-left: 7px;
+}
+
+
+}
