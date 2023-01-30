@@ -10,7 +10,7 @@ body{
 header{    
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;  
+      
         
 }
 /*--Div logo booki--*/
@@ -19,12 +19,11 @@ header{
     height: 19px;
     margin-top: 44px;
     margin-left: 55px;  
-    border: 1px solid rgb(248, 248, 248);  
+      
 }
 
 #ul_nav{    
     display: flex;
-    border: 2px solid rgb(255, 255, 255);
     margin-top: 0px; 
         
 }
@@ -36,8 +35,7 @@ a{
 #li_heb{
     width:162px;
     justify-content: center;
-    display: flex;
-    background-color: rgb(255, 255, 255);
+    display: flex;    
     margin-right: -7px;
         
 }
@@ -77,10 +75,6 @@ a{
 }
 
 /*--Article 1 comprenant H1, barre de recherche et filtres--*/
-#article_1{   
-        
-    border: 2px dotted green;     
-}
 /*--Section 1, H1 et texte--*/
 h1{
     margin-left: 55px;
@@ -99,8 +93,7 @@ h1{
 /*--Section 2, logo position et bouton de recherche--*/
 #section_2{
     display: flex;
-    border-radius:15px;
-    
+    border-radius:15px;   
              
 }
 #logo_position{    
@@ -116,9 +109,7 @@ h1{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;       
 }
-#form{
-    margin-top: -7px;    
-}
+
 
 #search_frame{
     margin-left: 10px;
@@ -517,19 +508,15 @@ h6{
     }
     /*--Header, comprenant logo Booki et les liens en Nav--*/ 
     header{
-
         flex-direction: column;
-        margin: 0;
-        padding: 0;
-                        
+                                
     }
     #logo_booki{
         display: block;
         margin-left: auto;
         margin-right: auto;               
     }
-    #nav_header{
-        
+    #nav_header{        
         margin-left: auto;
         margin-right: auto; 
     }
@@ -537,8 +524,13 @@ h6{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 0;
-        
+               
+    }
+    #li_heb:hover{
+        border-top: 2px solid #0065fc;
+    }
+    #li_act:hover{
+        border-top: 2px solid #F2F2F2;
     }    
     /*--Main--*/    
             
@@ -549,38 +541,42 @@ h6{
     }
     /*--Section 1, H1 et texte --*/
     h1{
-        margin:31px 12% auto 12%;
+        margin:31px 10% auto 6%;
     }
     #text_h1{
-        margin:13px 12% auto 12%;     
+        margin:13px 10% auto 7%;     
     } 
     /*--Section 2, Section 2, logo position et boutton de recherche --*/
-    #section_2{
-        width: auto; 
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;           
+    #section_2{      
+        
+        border: 1px solid #F2F2F2;
+        border-radius: 15px;
+        margin: 36px 6% 0 6%;                  
     }
     #logo_position{
-        width: auto;
         margin-left: 0;
     }
+    #form{
+        display: flex;   
+      
+    }
     #search_frame{
-        width: auto;
-        margin: auto;
+        width: 80%;        
     }
     ::placeholder{
-        width: auto;
+        margin: 0;
     }
     #search_button{
-        width: 49px;
+        width: 50px;
+        height: auto;        
+        margin: 0;        
     }
     #search_text{
         display: none;
     }
     #search_logo{
         display:inline;
-        width: auto;
+        
     }
 
 /*--Section 3 --*/
