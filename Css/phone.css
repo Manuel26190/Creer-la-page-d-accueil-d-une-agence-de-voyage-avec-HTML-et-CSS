@@ -1,0 +1,213 @@
+/*--Responsive mobile--*/
+@media screen and (max-width:767px) {
+    body{        
+        padding: 0; 
+        margin: 0;                
+    }
+    /*--Header, comprenant logo Booki et les liens en Nav--*/ 
+    header{
+        flex-direction: column;
+        justify-content: space-between;
+                                
+    }
+    #logo_booki{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;               
+    }
+    
+    #ul_nav{
+        justify-content: space-around;
+        padding-left: 0 ;        
+    }
+    
+    #li_act{
+        margin-right: 0;
+    }
+    #li_heb:hover{
+        border-top: 2px solid #0065fc;
+    }
+    #li_act:hover{
+        border-top: 2px solid #F2F2F2;
+    }    
+    /*--Main--*/    
+            
+    /*--Article 1 comprenant H1, barre de recherche et filtres--*/
+    #article_1{
+        width: auto;
+        height: auto;        
+    }
+    /*--Section 1, H1 et texte --*/
+    h1{
+        margin:31px 8% auto 6%;
+    }
+    #text_h1{
+        margin:13px 10% auto 6%;     
+    } 
+    /*--Section 2, Section 2, logo position et boutton de recherche --*/
+    #section_2{      
+        
+        border: 1px solid #F2F2F2;
+        border-radius: 15px;
+        margin: 36px 6% 0 6%;                  
+    }
+    #logo_position{
+        margin-left: 0;
+    }
+    #form{
+        display: flex;   
+      
+    }
+    #search_frame{
+        width: 80%;        
+    }
+    ::placeholder{
+        margin: 0;
+    }
+    #search_button{
+        width: 50px;
+        height: auto;        
+        margin: 0;        
+    }
+    #search_text{
+        display: none;
+    }
+    #search_logo{
+        display:inline;
+        
+    }
+
+/*--Section 3, Filtres et liens --*/
+    #section_3{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    #nav_section_3{
+        padding-left: 3%;
+    }
+    
+    #filtres{
+        margin: 34px 0 0 6% ;      
+    }
+    #ul_filtres{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 5px;
+        row-gap: 10px;
+        padding: 0 10px 0 0; 
+        ;                  
+    }
+    .li_filtres{
+       width: 41% ;
+       height: 50px;
+       border-radius: 25px;
+       margin-left: 0;
+       margin-right: auto;
+       font-size: 17px;
+              
+    }
+    .lien_filtres{          
+        
+        font-size: 3.5vw;
+        line-height: 20px;
+    }
+    /*--Section 4, logo info et texte 500 logements--*/
+    #logo_info{         
+        margin: 30px auto auto 5%;                
+    }
+    #texte_p_1{
+        margin:30px 2% auto 3%;     
+    } 
+
+    /*--Article 2, comprenant section 4, 5,6 et l'Aside--*/
+    #article_2{
+        margin: 0;
+        padding: 0;     
+    }
+
+    /*--Aside comprenant H2 Les plus Populaires, logo et les 3 cards--*/
+    aside{
+        margin-top: 10px;
+        border-radius: 0;
+        padding-bottom: 47px;
+    }
+    #h2_pop{
+        margin-left: 5%;
+    }
+    #logo_chart{
+        margin-left: 110px;
+    }
+
+    /*--Section 5, comprenant H2 Les hébergements, les 6 cards et Afficher plus--*/
+    #section_5{
+        background-color:#FFFFFF; ;
+            }
+    h2{
+        padding-top: 10%;
+        margin-left: 1%;
+    }
+    .card{
+        width: 98%;
+        margin-bottom: 10px;        
+    }
+
+    #section_flex{
+        flex-direction: column-reverse ;
+
+
+    }
+    /*--Section 6,comprenant les 6 cards Hébergements--*/
+    #afficher_plus{
+        display: none;
+    }
+    /*--Section 7, les 3 cards Les plus populaires--*/
+    .card_aside{
+        margin-bottom: 15px;
+    }  
+    
+    /*--Article 3, H5 Activités à Marseille et photos--*/
+    #article_3{
+        margin-top: -10px;
+    }
+    #section_8{        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;      
+        margin: 0 10px 0 20px;
+    } 
+    h5{
+        width: 30% ;
+        margin-left: 5%;
+        margin-bottom: 5px;
+    }
+    .card_activity{
+        height: 190px;
+        width: 97%;
+        margin-bottom: 24px;
+        
+
+    }
+    .img_act{
+        height:70%;
+        object-position:0 30%;
+    }
+    
+        /*--Footer--*/    
+    
+    footer{        
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0 0 0;
+        padding-left: 30px;
+             
+        
+        
+
+    }
+    
+
+                          
+    }
