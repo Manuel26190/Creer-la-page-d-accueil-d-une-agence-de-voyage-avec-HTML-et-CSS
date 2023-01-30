@@ -217,10 +217,8 @@ h1{
 
 /*--Article 2--*/
 
-#article_2{
-       
-    padding: 0 50px 0 50px;
-    border: 3px dotted red;
+#article_2{     
+    padding: 0 50px 0 50px;    
     }
 /*--Section 4 logo info et texte 500 logements--*/
 #section_4{
@@ -420,10 +418,7 @@ h4{
 
 
 /*--Article 3, H6 Activités à Marseille et photos--*/
-#article_3{    
-         
-       
-}
+
 h5{
     font-style: normal;
     font-weight: 700;
@@ -437,8 +432,7 @@ h5{
 
 /*--Section 8 les 4 cards Activités à Marseille--*/ 
 #section_8{
-    display: flex;     
-    border: 2px dotted yellowgreen;
+    display: flex;   
     margin-left: 50px ;
     
 }
@@ -509,6 +503,7 @@ h6{
     /*--Header, comprenant logo Booki et les liens en Nav--*/ 
     header{
         flex-direction: column;
+        justify-content: space-between;
                                 
     }
     #logo_booki{
@@ -516,15 +511,14 @@ h6{
         margin-left: auto;
         margin-right: auto;               
     }
-    #nav_header{        
-        margin-left: auto;
-        margin-right: auto; 
-    }
+    
     #ul_nav{
-        display: flex;
-        flex-direction: row;
         justify-content: space-around;
-               
+        padding-left: 0 ;        
+    }
+    
+    #li_act{
+        margin-right: 0;
     }
     #li_heb:hover{
         border-top: 2px solid #0065fc;
@@ -541,10 +535,10 @@ h6{
     }
     /*--Section 1, H1 et texte --*/
     h1{
-        margin:31px 10% auto 6%;
+        margin:31px 8% auto 6%;
     }
     #text_h1{
-        margin:13px 10% auto 7%;     
+        margin:13px 10% auto 6%;     
     } 
     /*--Section 2, Section 2, logo position et boutton de recherche --*/
     #section_2{      
@@ -579,39 +573,51 @@ h6{
         
     }
 
-/*--Section 3 --*/
+/*--Section 3, Filtres et liens --*/
     #section_3{
         flex-direction: column;
+        align-items: flex-start;
+        
     }
-    #nav_section_3{        
-        width: 100%;
-        display: flex;
-        justify-self: flex-start;
-        height: 130px;  
+    #nav_section_3{
+        padding-left: 4%;
     }
+    
     #filtres{
-        margin-left: 0;
-        padding-left: 0;
-        display: flex;
-        align-self: flex-start;
+        margin: 34px 0 0 6% ;      
     }
     #ul_filtres{        
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;                   
+        justify-content: center;
+        column-gap: 5px;
+        row-gap: 10px;
+        padding: 0 10px 0 0; 
+        ;                  
     }
     .li_filtres{
-       width: 155px ;
+       width: 40% ;
        height: 50px;
-       border-radius: 40px;
+       border-radius: 25px;
        margin-left: 0;
        margin-right: auto;
-       margin-bottom: 0;       
+              
     }
-    /*--Section 4--*/
+    .lien_filtres{          
+        
+        font-size: 3.5vw;
+        line-height: 20px;
+    }
+
+
+
+
+
+
+
+
+    /*--Section 4, logo info et texte 500 logements--*/
         #logo_info{         
         margin: 43px 1% auto 2%;                
     }
@@ -652,9 +658,9 @@ h6{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        
+    }   
     /*--Footer--*/    
-    }
+    
     footer{        
         display: flex;
         flex-direction: column;
