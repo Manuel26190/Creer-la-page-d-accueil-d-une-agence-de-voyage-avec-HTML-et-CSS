@@ -1,22 +1,31 @@
 /*--Responsive tablette--*/
-@media screen and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:992px){
 body{
     margin: 0;
-    padding: 1em;
+    padding: 0;
 }
-
+/*--Lien hébergement dans le Header--*/
 #hebergements{
     color: black;
 }
+/*--liste de filtres de la section 3--*/
 .li_filtres{
     margin: auto 20px auto auto;
 }
+
+/*--Section flex, comprenant section 6 et Aside--*/
 #section_flex{
     flex-direction: column;
 }
+
+/*--Section 5, comprenant H2 Les hébergements, les 6 cards et Afficher plus--*/
 #section_5{
     height: 626px;
 }
+h2{
+    margin-left: 20px ;
+}
+/*--Section 6, comprenant les 6 cards Hébergements--*/
 #section_6{
     row-gap: 20px;
     column-gap: 20px;    
@@ -29,11 +38,19 @@ body{
     width: 95%;
 }
 
-/*--Aside--*/
+/*--Aside, comprenant H2 Les plus Populaires, logo et les 3 cards--*/
 aside{
     margin-top:53px ;
     height:278px;
 }
+#h2_pop{
+    margin-left: 28px;
+}
+#logo_chart{
+    margin-left: 497px;
+}
+
+/*--Section 7, les 3 cards--*/
 #section_7{
     flex-direction: row;
     
@@ -42,7 +59,7 @@ aside{
     width: 29%;
     height: 134px;
     margin: 0 0 5px 25px;
-    
+    display: flex;     
 }
 .img_pop{
     width: 82px;
@@ -53,22 +70,47 @@ h4{
     margin-left: 7px;
     width:111px ;    
 }
+
 .prix_pop{
    font-size: 13px;
-   margin-left: 7px;
-   
+   margin-left: 7px;   
 }
-.stars_pop{
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 7px;
-    
-    
-    
+#stars_sdm{
+    margin: 15px auto auto 7px;
 }
-#stars_BB{
- 
- margin-left: 7px;
+#stars_cde{
+    margin: -17px auto auto 7px;
+}
+#stars_bb{ 
+    margin: 15px auto auto 7px;
+}
+
+/*--Article 3, comprenant H5 Activités à Marseille et les 4 cards--*/
+/*--Section 8, les 4 cards Activités à Marseille--*/
+
+#article_3{
+    height: auto;
+}
+#section_8{
+    height: 331px;
+}
+.card_activity{
+   height: 267px; 
+}
+.img_act{
+    height: 211px;
+}
+.p_act{
+    margin-top: 5px;
+    
+    justify-content: center;
+}
+footer{
+    margin-top: 20px;
+    padding-left: 0;
+}
+.foot_section{
+    margin-left: 0;    
 }
 
 

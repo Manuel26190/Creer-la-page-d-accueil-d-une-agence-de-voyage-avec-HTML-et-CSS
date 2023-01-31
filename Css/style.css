@@ -1,16 +1,17 @@
 body{
     max-width: 1400px;
-    padding: 3em ; 
+    padding: 0 ; 
     margin: 0;
     font-family: 'Raleway';
+    
     }
 
 /*--Header--*/
 header{    
     display: flex;
     justify-content: space-between;
-      
-        
+    height: 110px;
+       
 }
 /*--Div logo booki--*/
 #logo_booki{
@@ -36,11 +37,13 @@ a{
     justify-content: center;
     display: flex;    
     margin-right: -7px;
+    border: 2px solid white;
         
 }
 
 #li_heb:hover{
-    border-top: 2px solid #0065fc;    
+    border-top: 2px solid #0065fc;
+        
 }
 
 #hebergements{
@@ -75,24 +78,28 @@ a{
 
 /*--Article 1 comprenant H1, barre de recherche et filtres--*/
 /*--Section 1, H1 et texte--*/
+
 h1{
     margin-left: 55px;
     font-weight:700;
     font-size: 22px;
     line-height: 26px;
-    font-style: normal;    
+    font-style: normal;
+    margin-bottom: 0;    
 }
 #text_h1{    
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    margin-left: 55px;    
+    margin-left: 55px;
+    margin-top: 8px;    
 }
 /*--Section 2, logo position et bouton de recherche--*/
 #section_2{
     display: flex;
-    border-radius:15px;   
+    border-radius:15px;
+    margin-top: 22px; 
              
 }
 #logo_position{    
@@ -155,7 +162,7 @@ h1{
     align-items: center;
     
 }
-/*--Nav Section 3--*/
+/*--Nav Section 3, Filtres et liens--*/
 #filtres{
     width: 54px;
     height: 21px;
@@ -167,6 +174,7 @@ h1{
     color: #000000;
     font-weight: bolder;
     margin-left: 63px;
+    margin-top: 25px;
     }
     
     .lien_filtres{
@@ -181,6 +189,7 @@ h1{
     #nav_section_3{       
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
         
         
            
@@ -388,13 +397,19 @@ h4{
     margin-top: -18px;    
     margin-left: 15px;
     }
-.stars_pop{
+#stars_sdm{
     color: #0065fc;
     font-size: 20px;
     margin-left: 15px;
     margin-top: 31px;
-    }
-#stars_BB{
+}
+#stars_cde{
+    color: #0065fc;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 31px;
+}
+#stars_bb{
     color: #0065fc;
     font-size: 20px;
     margin-top: 50px;
@@ -453,10 +468,6 @@ footer{
     display: flex;
     justify-content: space-evenly;       
 
-}
-.foot_section{    
-    width: 33%;     
-     
 }
 
 h6{
