@@ -7,8 +7,7 @@
     /*--Header, comprenant logo Booki et les liens en Nav--*/ 
     header{
         flex-direction: column;
-        justify-content: space-between;
-                                
+        justify-content: space-between;                                
     }
     #logo_booki{
         display: block;
@@ -19,8 +18,7 @@
     #ul_nav{
         justify-content: space-around;
         padding-left: 0 ;        
-    }
-    
+    }    
     #li_act{
         margin-right: 0;
     }
@@ -31,7 +29,6 @@
         border-top: 2px solid #F2F2F2;
     }    
     /*--Main--*/    
-            
     /*--Article 1 comprenant H1, barre de recherche et filtres--*/
     #article_1{
         width: auto;
@@ -45,18 +42,17 @@
         margin:13px 10% auto 6%;     
     } 
     /*--Section 2, Section 2, logo position et boutton de recherche --*/
-    #section_2{      
-        
+    #section_2{     
         border: 1px solid #F2F2F2;
         border-radius: 15px;
-        margin: 36px 6% 0 6%;                  
+        margin: 36px 6% 0 6%;
+        width: auto;                 
     }
     #logo_position{
         margin-left: 0;
     }
     #form{
-        display: flex;   
-      
+        display: flex;
     }
     #search_frame{
         width: 80%;        
@@ -80,13 +76,11 @@
 /*--Section 3, Filtres et liens --*/
     #section_3{
         flex-direction: column;
-        align-items: flex-start;
-        
+        align-items: flex-start;        
     }
     #nav_section_3{
         padding-left: 3%;
-    }
-    
+    }    
     #filtres{
         margin: 34px 0 0 6% ;      
     }
@@ -98,7 +92,7 @@
         column-gap: 5px;
         row-gap: 10px;
         padding: 0 10px 0 0; 
-        ;                  
+                         
     }
     .li_filtres{
        width: 41% ;
@@ -106,14 +100,13 @@
        border-radius: 25px;
        margin-left: 0;
        margin-right: auto;
-       font-size: 17px;
-              
+       font-size: 17px;              
     }
     .lien_filtres{          
-        
         font-size: 3.5vw;
         line-height: 20px;
     }
+
     /*--Section 4, logo info et texte 500 logements--*/
     #logo_info{         
         margin: 30px auto auto 5%;                
@@ -153,16 +146,16 @@
         width: 98%;
         margin-bottom: 10px;        
     }
-
+    /*--Section flex, comprenant section 6 et Aside--*/
     #section_flex{
         flex-direction: column-reverse ;
-
-
     }
+
     /*--Section 6,comprenant les 6 cards Hébergements--*/
     #afficher_plus{
         display: none;
     }
+
     /*--Section 7, les 3 cards Les plus populaires--*/
     .card_aside{
         margin-bottom: 15px;
@@ -172,6 +165,8 @@
     #article_3{
         margin-top: -10px;
     }
+
+    /*--Section 8 les 4 cards Activités à Marseille--*/
     #section_8{        
         display: flex;
         flex-direction: column;
@@ -186,9 +181,7 @@
     .card_activity{
         height: 190px;
         width: 97%;
-        margin-bottom: 24px;
-        
-
+        margin-bottom: 24px;      
     }
     .img_act{
         height:70%;
@@ -201,13 +194,7 @@
         display: flex;
         flex-direction: column;
         margin: 80px 0 0 0;
-        padding-left: 30px;
-             
-        
-        
-
-    }
-    
-
-                          
-    }
+        padding-left: 30px;            
+    }   
+                         
+}

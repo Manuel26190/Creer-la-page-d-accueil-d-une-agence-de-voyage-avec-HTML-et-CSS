@@ -23,7 +23,7 @@ body{
     height: 626px;
 }
 h2{
-    margin-left: 20px ;
+    margin-left: 12px ;
 }
 /*--Section 6, comprenant les 6 cards Hébergements--*/
 #section_6{
@@ -47,13 +47,12 @@ aside{
     margin-left: 28px;
 }
 #logo_chart{
-    margin-left: 497px;
+    margin-left: 442px;
 }
 
 /*--Section 7, les 3 cards--*/
 #section_7{
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
 .card_aside{
     width: 29%;
@@ -93,17 +92,27 @@ h4{
 }
 #section_8{
     height: 331px;
+    column-gap: 33px;
+    
+    
 }
 .card_activity{
-   height: 267px; 
+   height: 267px;
+   width: 19%; 
 }
 .img_act{
-    height: 211px;
+    height: 79%;
+      
+}
+.span_activity{
+    display: flex;
+    
 }
 .p_act{
-    margin-top: 5px;
-    
-    justify-content: center;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 6px; 
+   
 }
 footer{
     margin-top: 20px;
