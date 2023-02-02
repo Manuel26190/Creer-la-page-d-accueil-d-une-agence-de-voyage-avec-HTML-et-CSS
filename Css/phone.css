@@ -7,7 +7,9 @@
     /*--Header, comprenant logo Booki et les liens en Nav--*/ 
     header{
         flex-direction: column;
-        justify-content: space-between;                                
+        justify-content: space-between;
+        height: 163px;
+
     }
     #logo_booki{
         display: block;
@@ -21,12 +23,20 @@
     }    
     #li_act{
         margin-right: 0;
+        width: 192px;
+    }
+    #li_heb{
+        width: 192px;
     }
     #li_heb:hover{
-        border-top: 2px solid #0065fc;
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
+        padding-bottom: 23px;
     }
     #li_act:hover{
-        border-top: 2px solid #F2F2F2;
+        border-bottom: 3px solid #F2F2F2;
+        border-top: none;
+        padding-bottom: 23px;
     }    
     /*--Main--*/    
     /*--Article 1 comprenant H1, barre de recherche et filtres--*/
