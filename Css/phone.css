@@ -9,14 +9,12 @@
         flex-direction: column;
         justify-content: space-between;
         height: 163px;
-
     }
     #logo_booki{
         display: block;
         margin-left: auto;
         margin-right: auto;               
-    }
-    
+    }    
     #ul_nav{
         justify-content: space-around;
         padding-left: 0 ;        
@@ -79,11 +77,10 @@
         display: none;
     }
     #search_logo{
-        display:inline;
-        
+        display:inline;        
     }
 
-/*--Section 3, Filtres et liens --*/
+/*--Section 3, Filtres et liens économique, familial,.. --*/
     #section_3{
         flex-direction: column;
         align-items: flex-start;        
@@ -101,15 +98,13 @@
         justify-content: center;
         column-gap: 5px;
         row-gap: 10px;
-        padding: 0 10px 0 0; 
-                         
+        padding: 0 10px 0 0;                         
     }
     .li_filtres{
        width: 41% ;
        height: 50px;
        border-radius: 25px;
-       margin-left: 0;
-       margin-right: auto;
+       margin: auto auto auto 0;       
        font-size: 17px;              
     }
     .lien_filtres{          
@@ -143,11 +138,11 @@
     #logo_chart{
         margin-left: 110px;
     }
-
+    
     /*--Section 5, comprenant H2 Les hébergements, les 6 cards et Afficher plus--*/
     #section_5{
         background-color:#FFFFFF; ;
-            }
+    }
     h2{
         padding-top: 10%;
         margin-left: 1%;
@@ -185,8 +180,7 @@
     } 
     h5{
         width: 30% ;
-        margin-left: 5%;
-        margin-bottom: 5px;
+        margin: auto auto 5px 5%;      
     }
     .card_activity{
         height: 190px;
@@ -203,8 +197,6 @@
         display: flex;
         flex-direction: column;        
         margin: 70px 0 0 0;
-        padding-left: 30px;
-                    
-    }   
-                         
+        padding-left: 30px;                    
+    }                            
 }
