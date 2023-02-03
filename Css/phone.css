@@ -4,7 +4,7 @@
         padding: 0; 
         margin: 0;                
     }
-    /*--Header, comprenant logo Booki et les liens en Nav--*/ 
+    /*--Header, comprenant le logo Booki et les liens en Nav--*/ 
     header{
         flex-direction: column;
         justify-content: space-between;

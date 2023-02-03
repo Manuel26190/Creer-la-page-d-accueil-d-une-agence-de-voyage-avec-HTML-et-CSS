@@ -356,8 +356,7 @@ aside{
     border-radius: 20px;
     display: flex;    
     margin: 0 30px 33px 30px;                   
-  }
-  
+  }  
 .lien_cards{
     display: flex;
     width: auto;
@@ -482,5 +481,12 @@ footer{
     color: #000000;
     margin-top: 12px;
     list-style-type: none;    
+}
+.a_footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;    
 }
 

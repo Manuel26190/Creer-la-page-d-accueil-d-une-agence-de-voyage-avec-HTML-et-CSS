@@ -13,7 +13,7 @@ body{
     margin: auto 15px auto auto;
 }
 
-/*--Section flex, comprenant section 6 et Aside--*/
+/*--Section flex, comprenant la section 6 et Aside--*/
 #section_flex{
     flex-direction: column;
 }
