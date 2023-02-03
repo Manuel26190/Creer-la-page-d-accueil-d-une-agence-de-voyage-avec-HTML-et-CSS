@@ -355,8 +355,15 @@ aside{
     box-shadow: 0 0 1em gray;
     border-radius: 20px;
     display: flex;    
-    margin: 0 30px 33px 30px;               
+    margin: 0 30px 33px 30px;                   
   }
+  
+.lien_cards{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
 .img_pop{
     width: 132px;
     height: 134px;
