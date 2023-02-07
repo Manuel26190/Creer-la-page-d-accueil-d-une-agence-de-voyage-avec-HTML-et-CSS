@@ -24,7 +24,9 @@
         width: 192px;
     }
     #li_heb{
-        width: 192px;
+        width: 170px;
+        margin-left: 0;
+        margin-right: 0;
     }
     #li_heb:hover{
         border-bottom: 3px solid #0065fc;
