@@ -353,8 +353,7 @@ aside{
     height: 144px;
     background-color: #FFFFFF;
     box-shadow: 0 0 1em gray;
-    border-radius: 20px;
-    display: flex;    
+    border-radius: 20px;    
     margin: 0 30px 33px 30px;                   
   }  
 .lien_cards{
